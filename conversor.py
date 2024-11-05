@@ -5,7 +5,7 @@ import ofxparse
 # Função para processar os dados OFX
 def process_ofx(ofx_data):
     json = {
-        "Instituicao banco": ofx_data.account.institution.organization,
+        #"Instituicao banco": ofx_data.account.institution.organization,
         "Agencia": ofx_data.account.routing_number,                                                    # O número de roteamento do banco
         "Tipo de conta": ofx_data.account.type,                                                        # Um objeto Tipo de conta
         "Numero da conta": ofx_data.account.account_id,                                                # O número da conta
